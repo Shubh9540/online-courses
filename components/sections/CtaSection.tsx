@@ -6,7 +6,7 @@ export const CtaSection = ({ data }: { data?: CtaData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-12 lg:py-12">
+    <section className="bg-white py-8 lg:py-10">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
 
         {/* Compact CTA Banner */}

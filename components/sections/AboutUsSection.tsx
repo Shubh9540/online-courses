@@ -3,7 +3,7 @@ import { AboutUsData } from '@/types/templates.types';
 import { FaGraduationCap, FaUsers, FaCheckCircle, FaPhoneAlt, FaArrowRight, FaShieldAlt, FaBookOpen } from 'react-icons/fa';
 import Link from 'next/link';
 
-export const AboutUsSection = ({ data }: { data?: AboutUsData }) => {
+export const AboutUsSection = ({ data, hideButton = false }: { data?: AboutUsData, hideButton?: boolean }) => {
   if (!data) return null;
 
   return (
@@ -98,7 +98,7 @@ export const AboutUsSection = ({ data }: { data?: AboutUsData }) => {
               )}
 
               {/* Button */}
-              {data.button && (
+              {data.button && !hideButton && (
                 <div>
                   <Link
                     href={data.button.url}

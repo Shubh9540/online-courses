@@ -216,6 +216,32 @@
           "label": "Enquiry Now"
         }
       ]
+    },
+    "coursesBreadcrumb": {
+      "title": "OUR COURSES",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Our Courses"
+        }
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
+    },
+    "pricingBreadcrumb": {
+      "title": "Pricing Plans",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Pricing"
+        }
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
     }
   },
   "categories": {
@@ -3107,6 +3133,394 @@
               "description": "Join thousands of students and take the next step toward your career goals.",
               "buttonText": "Enroll Now →",
               "buttonUrl": "/enroll"
+            }
+          }
+        },
+        "Mission": {
+          "variants": {
+            "OnlineCourseMission1": {
+              "badge": "Our Mission",
+              "title1": "Our ",
+              "title2": "Mission",
+              "description": "Our mission is to make high-quality education accessible to everyone, everywhere. We aim to empower learners with practical skills, industry-relevant knowledge, and the right guidance to achieve their personal and professional goals.",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FaGraduationCap",
+                  "title": "Accessible\\nEducation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FaBookOpen",
+                  "title": "Practical\\nSkills"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FaUsers",
+                  "title": "Guidance\\nfor Growth"
+                }
+              ],
+              "image": "/about/mission.webp",
+              "imageAlt": "Our Mission"
+            }
+          }
+        },
+        "Vision": {
+          "variants": {
+            "OnlineCourseVision1": {
+              "badge": "Our Vision",
+              "title1": "Our ",
+              "title2": "Vision",
+              "description": "Our vision is to become a global leader in online education, creating opportunities for lifelong learning and skill development. We strive to build a brighter future where everyone can learn, grow, and achieve their dreams without limitations.",
+              "features": [
+                {
+                  "id": "v1",
+                  "icon": "FaChartBar",
+                  "title": "Global\\nLearning Platform"
+                },
+                {
+                  "id": "v2",
+                  "icon": "FaLightbulb",
+                  "title": "Lifelong\\nOpportunities"
+                },
+                {
+                  "id": "v3",
+                  "icon": "FaBullseye",
+                  "title": "A Brighter\\nFuture for All"
+                }
+              ],
+              "image": "/about/vision.webp",
+              "imageAlt": "Our Vision"
+            }
+          }
+        },
+        "Achievements": {
+          "variants": {
+            "OnlineCourseAchievements1": {
+              "badge": "Our Achievements",
+              "title1": "Numbers ",
+              "title2": "That Inspire",
+              "description": "We are proud of the milestones we have achieved and the trust of our learners across the globe.",
+              "bgImage": "/main logo/footer_bg.webp",
+              "counters": [
+                {
+                  "id": "c1",
+                  "icon": "FaUsers",
+                  "number": "50,000+",
+                  "label": "Happy Learners"
+                },
+                {
+                  "id": "c2",
+                  "icon": "FaGraduationCap",
+                  "number": "1,200+",
+                  "label": "Online Courses"
+                },
+                {
+                  "id": "c3",
+                  "icon": "FaChalkboardTeacher",
+                  "number": "300+",
+                  "label": "Expert Instructors"
+                },
+                {
+                  "id": "c4",
+                  "icon": "FaGlobe",
+                  "number": "20+",
+                  "label": "Countries Served"
+                }
+              ]
+            }
+          }
+        },
+        "CoursePage": {
+          "variants": {
+            "OnlineCoursePage1": {
+              "subtitle": "OUR COURSES",
+              "title1": "Explore Our ",
+              "title2": "Popular Courses",
+              "description": "Choose from a wide range of in-demand courses designed to help you build new skills, advance your career, and achieve your goals.",
+              "tabs": [
+                "All Categories",
+                "Web Development",
+                "Digital Marketing",
+                "Graphic Design",
+                "Data Science",
+                "UI/UX Design"
+              ],
+              "courses": [
+                {
+                  "id": "full-stack-web-development",
+                  "category": "Web Development",
+                  "image": "/courses/full stack.webp",
+                  "title": "Full Stack Web Development",
+                  "rating": 4.8,
+                  "reviews": "1991",
+                  "lessons": "6 Lessons",
+                  "duration": "22h 0m",
+                  "level": "Beginner",
+                  "price": "₹4,999",
+                  "originalPrice": "₹8,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/full-stack-web-development"
+                },
+                {
+                  "id": "graphic-design-mastery",
+                  "category": "Graphic Design",
+                  "image": "/courses/graphic design.webp",
+                  "title": "Graphic Design Mastery",
+                  "rating": 4.7,
+                  "reviews": "1563",
+                  "lessons": "6 Lessons",
+                  "duration": "18h 30m",
+                  "level": "Intermediate",
+                  "price": "₹3,999",
+                  "originalPrice": "₹6,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/graphic-design-mastery"
+                },
+                {
+                  "id": "digital-marketing-for-everyone",
+                  "category": "Digital Marketing",
+                  "image": "/courses/digital marketing.webp",
+                  "title": "Digital Marketing for Everyone",
+                  "rating": 4.5,
+                  "reviews": "1240",
+                  "lessons": "6 Lessons",
+                  "duration": "20h 0m",
+                  "level": "Intermediate",
+                  "price": "₹2,999",
+                  "originalPrice": "₹5,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/digital-marketing-for-everyone"
+                },
+                {
+                  "id": "data-science-with-python",
+                  "category": "Data Science",
+                  "image": "/courses/data science.webp",
+                  "title": "Data Science with Python",
+                  "rating": 4.6,
+                  "reviews": "1785",
+                  "lessons": "6 Lessons",
+                  "duration": "17h 0m",
+                  "level": "Expert",
+                  "price": "₹4,499",
+                  "originalPrice": "₹8,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/data-science-with-python"
+                },
+                {
+                  "id": "python-for-beginners",
+                  "category": "Web Development",
+                  "image": "/courses/python.webp",
+                  "title": "Python for Beginners",
+                  "rating": 4.6,
+                  "reviews": "1420",
+                  "lessons": "8 Lessons",
+                  "duration": "15h 0m",
+                  "level": "Beginner",
+                  "price": "₹2,499",
+                  "originalPrice": "₹4,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/python-for-beginners"
+                },
+                {
+                  "id": "ui-ux-design-fundamentals",
+                  "category": "UI/UX Design",
+                  "image": "/courses/ui_ux.webp",
+                  "title": "UI/UX Design Fundamentals",
+                  "rating": 4.7,
+                  "reviews": "1680",
+                  "lessons": "6 Lessons",
+                  "duration": "16h 30m",
+                  "level": "Intermediate",
+                  "price": "₹3,499",
+                  "originalPrice": "₹6,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/ui-ux-design-fundamentals"
+                },
+                {
+                  "id": "advanced-react-and-nextjs",
+                  "category": "Web Development",
+                  "image": "/courses/full stack.webp",
+                  "title": "Advanced React and Next.js",
+                  "rating": 4.9,
+                  "reviews": "840",
+                  "lessons": "12 Lessons",
+                  "duration": "30h 0m",
+                  "level": "Advanced",
+                  "price": "₹5,999",
+                  "originalPrice": "₹9,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/advanced-react-and-nextjs"
+                },
+                {
+                  "id": "adobe-illustrator-pro",
+                  "category": "Graphic Design",
+                  "image": "/courses/graphic design.webp",
+                  "title": "Adobe Illustrator Pro Course",
+                  "rating": 4.8,
+                  "reviews": "950",
+                  "lessons": "10 Lessons",
+                  "duration": "25h 0m",
+                  "level": "Expert",
+                  "price": "₹4,599",
+                  "originalPrice": "₹7,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/adobe-illustrator-pro"
+                },
+                {
+                  "id": "seo-and-social-media-strategy",
+                  "category": "Digital Marketing",
+                  "image": "/courses/digital marketing.webp",
+                  "title": "SEO & Social Media Strategy",
+                  "rating": 4.6,
+                  "reviews": "1100",
+                  "lessons": "8 Lessons",
+                  "duration": "18h 0m",
+                  "level": "Intermediate",
+                  "price": "₹3,499",
+                  "originalPrice": "₹6,499",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/seo-and-social-media-strategy"
+                },
+                {
+                  "id": "machine-learning-bootcamp",
+                  "category": "Data Science",
+                  "image": "/courses/data science.webp",
+                  "title": "Machine Learning Bootcamp",
+                  "rating": 4.7,
+                  "reviews": "1320",
+                  "lessons": "15 Lessons",
+                  "duration": "40h 0m",
+                  "level": "Advanced",
+                  "price": "₹6,499",
+                  "originalPrice": "₹12,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/machine-learning-bootcamp"
+                },
+                {
+                  "id": "python-django-web-framework",
+                  "category": "Web Development",
+                  "image": "/courses/python.webp",
+                  "title": "Python Django Web Framework",
+                  "rating": 4.5,
+                  "reviews": "980",
+                  "lessons": "9 Lessons",
+                  "duration": "20h 30m",
+                  "level": "Intermediate",
+                  "price": "₹3,999",
+                  "originalPrice": "₹6,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/python-django-web-framework"
+                },
+                {
+                  "id": "figma-to-webflow-masterclass",
+                  "category": "UI/UX Design",
+                  "image": "/courses/ui_ux.webp",
+                  "title": "Figma to Webflow Masterclass",
+                  "rating": 4.8,
+                  "reviews": "1450",
+                  "lessons": "10 Lessons",
+                  "duration": "22h 0m",
+                  "level": "Expert",
+                  "price": "₹4,999",
+                  "originalPrice": "₹8,999",
+                  "description": "Learn and build real-world projects with expert guidance.",
+                  "url": "/courses/figma-to-webflow-masterclass"
+                }
+              ]
+            }
+          }
+        },
+        "Pricing": {
+          "variants": {
+            "OnlineCoursePricing1": {
+              "subtitle": "PRICING PLANS",
+              "title1": "Choose a Plan That Fits ",
+              "title2": "Your Goals",
+              "description": "Flexible and affordable plans to help you learn, grow, and achieve your career goals. Choose the right plan and start learning today.",
+              "plans": [
+                {
+                  "id": "basic-plan",
+                  "name": "Basic Plan",
+                  "description": "Perfect for beginners to start their learning journey.",
+                  "price": "₹999",
+                  "period": "/ month",
+                  "icon": "FaUser",
+                  "features": [
+                    "Access to 10+ Courses",
+                    "Video Lectures",
+                    "Basic Study Material",
+                    "Community Support",
+                    "Certificate of Completion"
+                  ],
+                  "buttonText": "Contact Us",
+                  "buttonUrl": "/contact",
+                  "isPopular": false
+                },
+                {
+                  "id": "standard-plan",
+                  "name": "Standard Plan",
+                  "description": "Best for learners who want more courses and features.",
+                  "price": "₹1,999",
+                  "period": "/ month",
+                  "icon": "FaCrown",
+                  "features": [
+                    "Access to 50+ Courses",
+                    "Video Lectures",
+                    "Downloadable Resources",
+                    "Live Doubt Sessions",
+                    "Projects & Assignments",
+                    "Certificate of Completion",
+                    "Priority Support"
+                  ],
+                  "buttonText": "Contact Us",
+                  "buttonUrl": "/contact",
+                  "isPopular": true
+                },
+                {
+                  "id": "premium-plan",
+                  "name": "Premium Plan",
+                  "description": "Advanced learning for career growth and skills.",
+                  "price": "₹2,999",
+                  "period": "/ month",
+                  "icon": "FaGem",
+                  "features": [
+                    "Access to 100+ Courses",
+                    "Video Lectures",
+                    "Downloadable Resources",
+                    "Live Doubt Sessions",
+                    "Projects & Assignments",
+                    "Certificate of Completion",
+                    "1-on-1 Mentorship",
+                    "Priority Support"
+                  ],
+                  "buttonText": "Contact Us",
+                  "buttonUrl": "/contact",
+                  "isPopular": false
+                },
+                {
+                  "id": "yearly-plan",
+                  "name": "Yearly Plan",
+                  "description": "Most value for serious learners and professionals.",
+                  "price": "₹19,999",
+                  "period": "/ year",
+                  "icon": "FaUsers",
+                  "features": [
+                    "Access to 200+ Courses",
+                    "Video Lectures",
+                    "Downloadable Resources",
+                    "Live Doubt Sessions",
+                    "Projects & Assignments",
+                    "Certificate of Completion",
+                    "1-on-1 Mentorship",
+                    "Priority Support",
+                    "Access to New Courses"
+                  ],
+                  "buttonText": "Contact Us",
+                  "buttonUrl": "/contact",
+                  "isPopular": false
+                }
+              ]
             }
           }
         }

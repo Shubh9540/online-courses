@@ -4,13 +4,13 @@ import rawData from '@/data/templates.json';
 
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { CoursePageSection } from '@/components/sections/CoursePageSection';
+import { PricingSection } from '@/components/sections/PricingSection';
 import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
 
-export default function CoursesPage() {
+export default function PricingPage() {
   const templateData: OnlineCourseTemplateData = rawData;
   const sectionData = templateData?.categories?.OnlineCourse?.sections;
   const commonData = templateData?.common;
@@ -20,9 +20,10 @@ export default function CoursesPage() {
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col">
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
-      <Breadcrumb data={commonData.coursesBreadcrumb} />
       
-      <CoursePageSection data={sectionData.CoursePage?.variants?.OnlineCoursePage1} />
+      <Breadcrumb data={commonData.pricingBreadcrumb} />
+      
+      <PricingSection data={sectionData.Pricing?.variants?.OnlineCoursePricing1} />
       
       <CtaSection data={sectionData.Cta?.variants?.OnlineCourseCta1} />
       

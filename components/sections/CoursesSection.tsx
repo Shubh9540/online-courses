@@ -67,12 +67,14 @@ export const CoursesSection = ({ data }: { data?: CoursesData }) => {
             ))}
 
             {/* View All Arrow */}
-            <Link
-              href={data.viewAllUrl}
-              className="w-9 h-9 shrink-0 rounded-full bg-blue-50 text-[#0f62fe] flex items-center justify-center hover:bg-[#0f62fe] hover:text-white transition-colors duration-300 ml-1"
-            >
-              <FaArrowRight className="text-[11px]" />
-            </Link>
+            {data.viewAllUrl && (
+              <Link
+                href={data.viewAllUrl}
+                className="w-9 h-9 shrink-0 rounded-full bg-blue-50 text-[#0f62fe] flex items-center justify-center hover:bg-[#0f62fe] hover:text-white transition-colors duration-300 ml-1"
+              >
+                <FaArrowRight className="text-[11px]" />
+              </Link>
+            )}
           </div>
 
         </div>

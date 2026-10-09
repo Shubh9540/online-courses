@@ -387,7 +387,7 @@ export interface CoursesData {
   description: string;
   tabs: string[];
   courses: CourseItem[];
-  viewAllUrl: string;
+  viewAllUrl?: string;
 }
 
 export interface ProcessItem {
@@ -433,9 +433,43 @@ export interface InstructorsData {
   instructors: InstructorItem[];
 }
 
+export interface MissionVisionFeature {
+  id: string;
+  icon: string;
+  title: string;
+}
+
+export interface MissionVisionData {
+  badge: string;
+  title1: string;
+  title2: string;
+  description: string;
+  features: MissionVisionFeature[];
+  image: string;
+  imageAlt: string;
+}
+
+export interface CounterItem {
+  id: string;
+  icon: string;
+  number: string;
+  label: string;
+}
+
+export interface AchievementsData {
+  badge: string;
+  title1: string;
+  title2: string;
+  description: string;
+  bgImage?: string;
+  counters: CounterItem[];
+}
+
 export interface OnlineCourseTemplateData {
   common: {
     aboutBreadcrumb?: any;
+    coursesBreadcrumb?: any;
+    pricingBreadcrumb?: any;
     servicesBreadcrumb?: any;
     contactBreadcrumb?: any;
     enquiryBreadcrumb?: any;
@@ -450,8 +484,12 @@ export interface OnlineCourseTemplateData {
         Header?: { variants?: { OnlineCourseHeader1?: HeaderData } };
         Hero?: { variants?: { OnlineCourseHero1?: HeroData } };
         AboutUs?: { variants?: { OnlineCourseAboutUs1?: AboutUsData } };
+        Mission?: { variants?: { OnlineCourseMission1?: MissionVisionData } };
+        Vision?: { variants?: { OnlineCourseVision1?: MissionVisionData } };
+        Achievements?: { variants?: { OnlineCourseAchievements1?: AchievementsData } };
         Category?: { variants?: { OnlineCourseCategory1?: CategoryData } };
         Courses?: { variants?: { OnlineCourseCourses1?: CoursesData } };
+        CoursePage?: { variants?: { OnlineCoursePage1?: CoursesData } };
         Process?: { variants?: { OnlineCourseProcess1?: ProcessData } };
         Instructors?: { variants?: { OnlineCourseInstructors1?: InstructorsData } };
         Testimonials?: { variants?: { OnlineCourseTestimonials1?: TestimonialsData } };
@@ -465,7 +503,29 @@ export interface OnlineCourseTemplateData {
         ContactUs?: { variants?: { OnlineCourseContactUs1?: ContactUsData } };
         enquiry?: { variants?: { OnlineCourseEnquiry1?: EnquiryData } };
         ServicesGrid?: { variants?: { OnlineCourseServicesGrid1?: ServicesGridData } };
+        Pricing?: { variants?: { OnlineCoursePricing1?: PricingData } };
       };
     };
   };
+}
+
+export interface PricingPlan {
+  id: string;
+  name: string;
+  description: string;
+  price: string;
+  period: string;
+  icon: string;
+  features: string[];
+  buttonText: string;
+  buttonUrl: string;
+  isPopular?: boolean;
+}
+
+export interface PricingData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  plans: PricingPlan[];
 }

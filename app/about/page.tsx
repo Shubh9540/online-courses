@@ -4,8 +4,10 @@ import rawData from '@/data/templates.json';
 
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { AboutPageSection } from '@/components/sections/AboutPageSection';
-
+import { AboutUsSection } from '@/components/sections/AboutUsSection';
+import { AboutMission } from '@/components/sections/AboutMission';
+import { AboutVision } from '@/components/sections/AboutVision';
+import { AchievementsSection } from '@/components/sections/AchievementsSection';
 import { WhatWeDoSection } from '@/components/sections/WhatWeDoSection';
 import { Footer } from '@/components/common/Footer';
 
@@ -24,8 +26,17 @@ export default function Page() {
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
       <Breadcrumb data={commonData.aboutBreadcrumb} />
 
-      {/* About Page Content Section */}
-      <AboutPageSection data={sectionData.AboutPage?.variants?.OnlineCourseAboutPage1} />
+      {/* About Us Section */}
+      <AboutUsSection data={sectionData.AboutUs?.variants?.OnlineCourseAboutUs1} hideButton={true} />
+
+      {/* Mission Section */}
+      <AboutMission data={sectionData.Mission?.variants?.OnlineCourseMission1} />
+
+      {/* Vision Section */}
+      <AboutVision data={sectionData.Vision?.variants?.OnlineCourseVision1} />
+
+      {/* Achievements Section */}
+      <AchievementsSection data={sectionData.Achievements?.variants?.OnlineCourseAchievements1} />
 
       {/* What We Do Section */}
       <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.OnlineCourseWhatWeDo1} />
