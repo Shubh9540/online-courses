@@ -71,8 +71,9 @@ export const InstructorsSection = ({ data }: { data?: InstructorsData }) => {
           {/* Right Column: Instructors Grid */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 relative">
             {data.instructors?.map((instructor) => (
-              <div
+              <Link
                 key={instructor.id}
+                href={instructor.url}
                 className="bg-white rounded-[10px] border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col group"
               >
                 {/* Image */}
@@ -94,7 +95,7 @@ export const InstructorsSection = ({ data }: { data?: InstructorsData }) => {
                     {instructor.role}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

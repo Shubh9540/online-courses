@@ -43,31 +43,26 @@
         },
         {
           "id": "ql3",
-          "label": "Our Courses",
+          "label": "Courses",
           "url": "/courses"
         },
         {
           "id": "ql4",
-          "label": "Teachers",
-          "url": "/teachers"
+          "label": "Instructors",
+          "url": "/instructors"
         },
         {
           "id": "ql5",
-          "label": "Admission Process",
-          "url": "/admission"
+          "label": "Pricing",
+          "url": "/pricing"
         },
         {
           "id": "ql6",
-          "label": "Gallery",
-          "url": "/gallery"
+          "label": "FAQ",
+          "url": "/faq"
         },
         {
           "id": "ql7",
-          "label": "Blog",
-          "url": "/blog"
-        },
-        {
-          "id": "ql8",
           "label": "Contact Us",
           "url": "/contact"
         }
@@ -75,41 +70,26 @@
       "servicesLinks": [
         {
           "id": "sl1",
-          "label": "Web Development",
-          "url": "#"
+          "label": "Full Stack Web Development",
+          "url": "/courses/full-stack-web-development"
         },
         {
           "id": "sl2",
-          "label": "Data Science",
-          "url": "#"
+          "label": "Graphic Design Mastery",
+          "url": "/courses/graphic-design-mastery"
         },
         {
           "id": "sl3",
-          "label": "Digital Marketing",
-          "url": "#"
+          "label": "Digital Marketing for Everyone",
+          "url": "/courses/digital-marketing-for-everyone"
         },
         {
           "id": "sl4",
-          "label": "Graphic Design",
-          "url": "#"
+          "label": "Data Science with Python",
+          "url": "/courses/data-science-with-python"
         },
         {
           "id": "sl5",
-          "label": "Mobile App Development",
-          "url": "#"
-        },
-        {
-          "id": "sl6",
-          "label": "Business Management",
-          "url": "#"
-        },
-        {
-          "id": "sl7",
-          "label": "Spoken English",
-          "url": "#"
-        },
-        {
-          "id": "sl8",
           "label": "View All Courses",
           "url": "/courses"
         }
@@ -203,7 +183,8 @@
         {
           "label": "Contact Us"
         }
-      ]
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
     },
     "enquiryBreadcrumb": {
       "title": "Enquiry Now",
@@ -239,6 +220,45 @@
         },
         {
           "label": "Pricing"
+        }
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
+    },
+    "enrollBreadcrumb": {
+      "title": "Enroll Now",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Enroll"
+        }
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
+    },
+    "instructorsBreadcrumb": {
+      "title": "Our Instructors",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Instructors"
+        }
+      ],
+      "bgImage": "/main logo/breadcrumb.webp"
+    },
+    "faqBreadcrumb": {
+      "title": "FAQ",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "FAQ"
         }
       ],
       "bgImage": "/main logo/breadcrumb.webp"
@@ -2382,10 +2402,21 @@
           "variants": {
             "OnlineCourseFaq1": {
               "subtitle": "FAQ",
-              "title1": "Frequently",
-              "title2": "Asked Questions",
-              "description": "Find answers to common questions about our services, process, and how we can support your skill development.",
-              "image": "/about/about_front.webp",
+              "title1": "Frequently Asked ",
+              "title2": "Questions",
+              "description": "Find answers to commonly asked questions about our courses, enrollment process, payments, certificates, and more.",
+              "image": "/choose/faq.webp",
+              "contactInfo": {
+                "phoneTitle": "Call Us",
+                "phone": "+1 000000000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "hoursTitle": "Working Hours",
+                "hoursLine1": "Mon - Sat: 9:00 AM - 6:00 PM",
+                "hoursLine2": "Sunday: Closed",
+                "buttonText": "Contact Support",
+                "buttonUrl": "/contact"
+              },
               "faqs": [
                 {
                   "id": "faq1",
@@ -2829,32 +2860,69 @@
           "variants": {
             "OnlineCourseContactUs1": {
               "subtitle": "GET IN TOUCH",
-              "title1": "We're Here",
-              "title2": "to Support You",
-              "description": "Have questions or want to schedule a consultation? Reach out to us - we're always happy to help.",
+              "title1": "Contact ",
+              "title2": "Us",
+              "description": "Have questions about admissions, courses, or anything else? Our team is here to help. Reach out to us through the form or contact details below.",
+              "image": "/choose/contact.webp",
               "contactInfo": {
-                "phoneTitle": "Phone",
-                "phone": "+1 000000000\nCall Us Anytime",
-                "emailTitle": "E-Mail",
-                "email": "info@xyz.com\nSend Us a Message",
-                "addressTitle": "Address",
-                "address": "123 Main St,\nNew York, NY, USA",
-                "hoursTitle": "",
-                "hoursLine1": "",
-                "hoursLine2": ""
+                "phoneTitle": "Call Us",
+                "phone": "+1 000000000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "addressTitle": "Our Location",
+                "address": "123 Main St, New York, NY, USA",
+                "hoursTitle": "Working Hours",
+                "hoursLine1": "Mon - Sat: 9:00 AM - 6:00 PM",
+                "hoursLine2": "Sunday: Closed",
+                "title1": "Our",
+                "title2": "Contact Details",
+                "description": "You can also reach us through the following channels. Our team is always happy to assist you."
               },
               "form": {
-                "title": "Send Us a Message",
-                "description": "Fill out the form below and we'll get back to you soon.",
+                "description": "Fill out the form below and we'll get back to you as soon as possible.",
                 "buttonText": "Send Message",
-                "namePlaceholder": "Full Name",
-                "emailPlaceholder": "Email Address",
-                "phonePlaceholder": "Phone Number",
-                "subjectPlaceholder": "Subject",
-                "messagePlaceholder": "Your Message"
+                "namePlaceholder": "Your Name *",
+                "emailPlaceholder": "Your Email *",
+                "phonePlaceholder": "Phone Number *",
+                "subjectPlaceholder": "Subject *",
+                "messagePlaceholder": "Your Message *",
+                "servicesList": [
+                  "Web Development",
+                  "Data Science",
+                  "Digital Marketing",
+                  "Graphic Design"
+                ],
+                "title1": "Send Us a",
+                "title2": "Message",
+                "privacyText": "We respect your privacy. Your information is safe with us."
               },
-              "image": "/service/1.webp",
-              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25281488104!2d-74.14448744043916!3d40.69766373764495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin",
+              "infoBoxes": [
+                {
+                  "id": "box1",
+                  "icon": "FaGraduationCap",
+                  "title": "Admissions Support",
+                  "description": "Get help with the admission process and requirements."
+                },
+                {
+                  "id": "box2",
+                  "icon": "FaBookOpen",
+                  "title": "Course Information",
+                  "description": "Know more about our courses, fees and duration."
+                },
+                {
+                  "id": "box3",
+                  "icon": "FaUsers",
+                  "title": "Campus Visit",
+                  "description": "Schedule a campus tour and meet our team."
+                },
+                {
+                  "id": "box4",
+                  "icon": "FaCommentDots",
+                  "title": "General Queries",
+                  "description": "We're here to answer all your questions."
+                }
+              ]
             }
           }
         },
@@ -2988,7 +3056,11 @@
                   "level": "Beginner",
                   "price": "₹4,999",
                   "originalPrice": "₹8,999",
-                  "url": "/courses/full-stack-web-development"
+                  "url": "/courses/full-stack-web-development",
+                  "enrollText": "Enroll Now",
+                  "enrollUrl": "/enroll",
+                  "contactText": "Contact Us",
+                  "contactUrl": "/contact"
                 },
                 {
                   "id": "course-2",
@@ -3003,7 +3075,11 @@
                   "level": "Intermediate",
                   "price": "₹3,999",
                   "originalPrice": "₹6,999",
-                  "url": "/courses/graphic-design-mastery"
+                  "url": "/courses/graphic-design-mastery",
+                  "enrollText": "Enroll Now",
+                  "enrollUrl": "/enroll",
+                  "contactText": "Contact Us",
+                  "contactUrl": "/contact"
                 },
                 {
                   "id": "course-3",
@@ -3018,7 +3094,11 @@
                   "level": "Intermediate",
                   "price": "₹2,999",
                   "originalPrice": "₹5,999",
-                  "url": "/courses/digital-marketing-for-everyone"
+                  "url": "/courses/digital-marketing-for-everyone",
+                  "enrollText": "Enroll Now",
+                  "enrollUrl": "/enroll",
+                  "contactText": "Contact Us",
+                  "contactUrl": "/contact"
                 },
                 {
                   "id": "course-4",
@@ -3033,7 +3113,11 @@
                   "level": "Expert",
                   "price": "₹4,499",
                   "originalPrice": "₹8,999",
-                  "url": "/courses/data-science-with-python"
+                  "url": "/courses/data-science-with-python",
+                  "enrollText": "Enroll Now",
+                  "enrollUrl": "/enroll",
+                  "contactText": "Contact Us",
+                  "contactUrl": "/contact"
                 }
               ]
             }
@@ -3098,28 +3182,758 @@
               "contactUrl": "/contact",
               "instructors": [
                 {
-                  "id": "inst-1",
+                  "id": "priya-sharma",
                   "name": "Priya Sharma",
-                  "role": "Web Development Instructor",
-                  "image": "/instructors/1.webp"
+                  "role": "Web Development Teacher",
+                  "image": "/instructors/1.webp",
+                  "rating": 4.8,
+                  "reviews": "345",
+                  "students": "4,200",
+                  "courses": "8",
+                  "experience": "6 Years",
+                  "bio": "Priya is a passionate web development instructor with over 6 years of industry experience. She specializes in full-stack development and has helped thousands of students launch their tech careers.",
+                  "expertise": [
+                    "HTML & CSS",
+                    "JavaScript",
+                    "React.js",
+                    "Node.js"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/priya-sharma"
                 },
                 {
-                  "id": "inst-2",
+                  "id": "rahul-mehta",
                   "name": "Rahul Mehta",
-                  "role": "Digital Marketing Instructor",
-                  "image": "/instructors/2.webp"
+                  "role": "Digital Marketing Teacher",
+                  "image": "/instructors/2.webp",
+                  "rating": 4.7,
+                  "reviews": "267",
+                  "students": "3,800",
+                  "courses": "6",
+                  "experience": "7 Years",
+                  "bio": "Rahul is a digital marketing expert who has worked with top brands across India. His courses on SEO, social media, and Google Ads are among the most popular on the platform.",
+                  "expertise": [
+                    "SEO",
+                    "Google Ads",
+                    "Social Media Marketing",
+                    "Content Strategy"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/rahul-mehta"
                 },
                 {
-                  "id": "inst-3",
+                  "id": "anjali-verma",
                   "name": "Anjali Verma",
-                  "role": "Graphic Design Instructor",
-                  "image": "/instructors/3.webp"
+                  "role": "Graphic Design Teacher",
+                  "image": "/instructors/3.webp",
+                  "rating": 4.6,
+                  "reviews": "132",
+                  "students": "2,500",
+                  "courses": "5",
+                  "experience": "5 Years",
+                  "bio": "Anjali is a creative graphic designer with a strong background in brand identity and visual communication. She teaches Photoshop, Illustrator, and UI design principles.",
+                  "expertise": [
+                    "Adobe Photoshop",
+                    "Illustrator",
+                    "Brand Identity",
+                    "UI Design"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/anjali-verma"
                 },
                 {
-                  "id": "inst-4",
+                  "id": "vikram-singh",
                   "name": "Vikram Singh",
-                  "role": "Data Science Instructor",
-                  "image": "/instructors/4.webp"
+                  "role": "Data Science Teacher",
+                  "image": "/instructors/4.webp",
+                  "rating": 4.9,
+                  "reviews": "434",
+                  "students": "5,100",
+                  "courses": "10",
+                  "experience": "8 Years",
+                  "bio": "Vikram is a data science and machine learning specialist with a PhD in Computer Science. He has worked with Fortune 500 companies and brings real-world data expertise to every class.",
+                  "expertise": [
+                    "Python",
+                    "Machine Learning",
+                    "Data Analysis",
+                    "TensorFlow"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-github",
+                      "icon": "FaGithub",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/vikram-singh"
+                }
+              ]
+            }
+          }
+        },
+        "EnrollPage": {
+          "variants": {
+            "OnlineCourseEnroll1": {
+              "leftSubtitle": "Take the Next Step",
+              "leftTitle1": "ENROLL ",
+              "leftTitle2": "NOW",
+              "leftDescription": "Join our career-focused courses and build a brighter future.",
+              "image": "/choose/enroll.webp",
+              "form": {
+                "headerTitle1": "Enroll ",
+                "headerTitle2": "Now",
+                "headerDescription": "Fill in the details below to enroll in your preferred course.",
+                "buttonText": "ENROLL NOW →",
+                "nameLabel": "Full Name *",
+                "emailLabel": "Email Address *",
+                "phoneLabel": "Phone Number *",
+                "courseLabel": "Select Course *",
+                "batchLabel": "Preferred Batch *",
+                "modeLabel": "Mode of Learning *",
+                "messageLabel": "Message (Optional)",
+                "namePlaceholder": "Enter your full name",
+                "emailPlaceholder": "Enter your email address",
+                "phonePlaceholder": "Enter your phone number",
+                "coursePlaceholder": "Select Course",
+                "batchPlaceholder": "Select Batch",
+                "modePlaceholder": "Online / Offline",
+                "messagePlaceholder": "Write your message here...",
+                "coursesList": [
+                  "Web Development",
+                  "Digital Marketing",
+                  "Graphic Design",
+                  "Data Science",
+                  "Python Programming",
+                  "UI/UX Design"
+                ],
+                "batchesList": [
+                  "Morning (8 AM - 12 PM)",
+                  "Afternoon (2 PM - 6 PM)",
+                  "Evening (6 PM - 10 PM)",
+                  "Weekend Batch"
+                ],
+                "modesList": [
+                  "Online",
+                  "Offline (In Campus)",
+                  "Hybrid"
+                ],
+                "secureText": "Your information is safe with us."
+              },
+              "infoBoxes": [
+                {
+                  "id": "ib-1",
+                  "icon": "FaGraduationCap",
+                  "title": "Get Certified",
+                  "description": "Earn a recognized certificate"
+                },
+                {
+                  "id": "ib-2",
+                  "icon": "FaBullseye",
+                  "title": "Flexible Learning",
+                  "description": "Online & offline options"
+                },
+                {
+                  "id": "ib-3",
+                  "icon": "FaUsers",
+                  "title": "Expert Mentors",
+                  "description": "Learn from industry experts"
+                },
+                {
+                  "id": "ib-4",
+                  "icon": "FaChartLine",
+                  "title": "Career Growth",
+                  "description": "Unlock new opportunities"
+                }
+              ]
+            }
+          }
+        },
+        "InstructorsPage": {
+          "variants": {
+            "OnlineCourseInstructorsPage1": {
+              "subtitle": "OUR INSTRUCTORS",
+              "title1": "Our Top ",
+              "title2": "Instructors",
+              "description": "Learn from industry experts with real-world experience. Our instructors bring practical knowledge and hands-on skills to help you achieve your career goals.",
+              "instructors": [
+                {
+                  "id": "priya-sharma",
+                  "name": "Priya Sharma",
+                  "role": "Web Development Teacher",
+                  "image": "/instructors/1.webp",
+                  "rating": 4.8,
+                  "reviews": "345",
+                  "students": "4,200",
+                  "courses": "8",
+                  "experience": "6 Years",
+                  "bio": "Priya is a passionate web development instructor with over 6 years of industry experience. She specializes in full-stack development and has helped thousands of students launch their tech careers.",
+                  "expertise": [
+                    "HTML & CSS",
+                    "JavaScript",
+                    "React.js",
+                    "Node.js"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/priya-sharma"
+                },
+                {
+                  "id": "rahul-mehta",
+                  "name": "Rahul Mehta",
+                  "role": "Digital Marketing Teacher",
+                  "image": "/instructors/2.webp",
+                  "rating": 4.7,
+                  "reviews": "267",
+                  "students": "3,800",
+                  "courses": "6",
+                  "experience": "7 Years",
+                  "bio": "Rahul is a digital marketing expert who has worked with top brands across India. His courses on SEO, social media, and Google Ads are among the most popular on the platform.",
+                  "expertise": [
+                    "SEO",
+                    "Google Ads",
+                    "Social Media Marketing",
+                    "Content Strategy"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/rahul-mehta"
+                },
+                {
+                  "id": "anjali-verma",
+                  "name": "Anjali Verma",
+                  "role": "Graphic Design Teacher",
+                  "image": "/instructors/3.webp",
+                  "rating": 4.6,
+                  "reviews": "132",
+                  "students": "2,500",
+                  "courses": "5",
+                  "experience": "5 Years",
+                  "bio": "Anjali is a creative graphic designer with a strong background in brand identity and visual communication. She teaches Photoshop, Illustrator, and UI design principles.",
+                  "expertise": [
+                    "Adobe Photoshop",
+                    "Illustrator",
+                    "Brand Identity",
+                    "UI Design"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/anjali-verma"
+                },
+                {
+                  "id": "vikram-singh",
+                  "name": "Vikram Singh",
+                  "role": "Data Science Teacher",
+                  "image": "/instructors/4.webp",
+                  "rating": 4.9,
+                  "reviews": "434",
+                  "students": "5,100",
+                  "courses": "10",
+                  "experience": "8 Years",
+                  "bio": "Vikram is a data science and machine learning specialist with a PhD in Computer Science. He has worked with Fortune 500 companies and brings real-world data expertise to every class.",
+                  "expertise": [
+                    "Python",
+                    "Machine Learning",
+                    "Data Analysis",
+                    "TensorFlow"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-github",
+                      "icon": "FaGithub",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/vikram-singh"
+                },
+                {
+                  "id": "neha-gupta",
+                  "name": "Neha Gupta",
+                  "role": "Business Teacher",
+                  "image": "/instructors/5.webp",
+                  "rating": 4.7,
+                  "reviews": "198",
+                  "students": "2,900",
+                  "courses": "7",
+                  "experience": "6 Years",
+                  "bio": "Neha is a business and entrepreneurship coach who has helped hundreds of aspiring entrepreneurs build successful ventures. She covers business strategy, marketing, and finance.",
+                  "expertise": [
+                    "Business Strategy",
+                    "Entrepreneurship",
+                    "Finance",
+                    "Marketing"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/neha-gupta"
+                },
+                {
+                  "id": "amit-kumar",
+                  "name": "Amit Kumar",
+                  "role": "Mobile App Development Teacher",
+                  "image": "/instructors/6.webp",
+                  "rating": 4.8,
+                  "reviews": "296",
+                  "students": "3,400",
+                  "courses": "9",
+                  "experience": "7 Years",
+                  "bio": "Amit is a senior mobile app developer with expertise in Flutter, React Native, and Android development. His practical, project-based approach makes complex concepts easy to understand.",
+                  "expertise": [
+                    "Flutter",
+                    "React Native",
+                    "Android",
+                    "iOS Development"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-github",
+                      "icon": "FaGithub",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/amit-kumar"
+                },
+                {
+                  "id": "sneha-patel",
+                  "name": "Sneha Patel",
+                  "role": "Spoken English Teacher",
+                  "image": "/instructors/7.webp",
+                  "rating": 4.6,
+                  "reviews": "176",
+                  "students": "2,100",
+                  "courses": "4",
+                  "experience": "5 Years",
+                  "bio": "Sneha is a certified English language trainer who specializes in spoken English, communication skills, and interview preparation. Her engaging teaching style has won her hundreds of 5-star reviews.",
+                  "expertise": [
+                    "Spoken English",
+                    "Public Speaking",
+                    "Interview Preparation",
+                    "Business English"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/sneha-patel"
+                },
+                {
+                  "id": "karan-malhotra",
+                  "name": "Karan Malhotra",
+                  "role": "Career Development Teacher",
+                  "image": "/instructors/8.webp",
+                  "rating": 4.8,
+                  "reviews": "388",
+                  "students": "4,700",
+                  "courses": "11",
+                  "experience": "9 Years",
+                  "bio": "Karan is a career coach and HR professional who has guided thousands of students in resume building, interview skills, and landing their dream jobs in top companies.",
+                  "expertise": [
+                    "Resume Writing",
+                    "Interview Skills",
+                    "LinkedIn Optimization",
+                    "Career Planning"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/karan-malhotra"
+                },
+                {
+                  "id": "riya-desai",
+                  "name": "Riya Desai",
+                  "role": "UI/UX Design Teacher",
+                  "image": "/instructors/1.webp",
+                  "rating": 4.7,
+                  "reviews": "221",
+                  "students": "3,100",
+                  "courses": "6",
+                  "experience": "5 Years",
+                  "bio": "Riya is a UI/UX designer with experience at leading product companies. She teaches Figma, design systems, user research, and prototyping with a hands-on, real-project approach.",
+                  "expertise": [
+                    "Figma",
+                    "User Research",
+                    "Wireframing",
+                    "Design Systems"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/riya-desai"
+                },
+                {
+                  "id": "suresh-nair",
+                  "name": "Suresh Nair",
+                  "role": "Cloud Computing Teacher",
+                  "image": "/instructors/2.webp",
+                  "rating": 4.8,
+                  "reviews": "312",
+                  "students": "3,600",
+                  "courses": "8",
+                  "experience": "8 Years",
+                  "bio": "Suresh is a certified AWS and Azure cloud architect who has led digital transformation projects for large enterprises. He makes cloud concepts accessible and practical for every learner.",
+                  "expertise": [
+                    "AWS",
+                    "Azure",
+                    "DevOps",
+                    "Docker & Kubernetes"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-github",
+                      "icon": "FaGithub",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/suresh-nair"
+                },
+                {
+                  "id": "divya-kapoor",
+                  "name": "Divya Kapoor",
+                  "role": "Python Programming Teacher",
+                  "image": "/instructors/3.webp",
+                  "rating": 4.9,
+                  "reviews": "409",
+                  "students": "5,500",
+                  "courses": "9",
+                  "experience": "7 Years",
+                  "bio": "Divya is a software engineer and Python educator who loves breaking down complex programming concepts into simple, digestible lessons. Her courses are loved for clarity and hands-on exercises.",
+                  "expertise": [
+                    "Python",
+                    "Django",
+                    "Flask",
+                    "Automation"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-github",
+                      "icon": "FaGithub",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/divya-kapoor"
+                },
+                {
+                  "id": "arjun-reddy",
+                  "name": "Arjun Reddy",
+                  "role": "Cybersecurity Teacher",
+                  "image": "/instructors/4.webp",
+                  "rating": 4.7,
+                  "reviews": "183",
+                  "students": "2,700",
+                  "courses": "5",
+                  "experience": "6 Years",
+                  "bio": "Arjun is an ethical hacker and cybersecurity professional who has helped organisations secure their digital infrastructure. He teaches penetration testing, network security, and ethical hacking.",
+                  "expertise": [
+                    "Ethical Hacking",
+                    "Network Security",
+                    "Penetration Testing",
+                    "VAPT"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/arjun-reddy"
+                },
+                {
+                  "id": "meera-joshi",
+                  "name": "Meera Joshi",
+                  "role": "Content Writing Teacher",
+                  "image": "/instructors/5.webp",
+                  "rating": 4.6,
+                  "reviews": "154",
+                  "students": "1,800",
+                  "courses": "4",
+                  "experience": "5 Years",
+                  "bio": "Meera is a professional content writer and copywriter who has worked with media houses and startups. She teaches content creation, blogging, SEO writing, and storytelling.",
+                  "expertise": [
+                    "Content Writing",
+                    "Copywriting",
+                    "SEO Writing",
+                    "Blogging"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/meera-joshi"
+                },
+                {
+                  "id": "rohit-sharma",
+                  "name": "Rohit Sharma",
+                  "role": "Video Editing Teacher",
+                  "image": "/instructors/6.webp",
+                  "rating": 4.8,
+                  "reviews": "274",
+                  "students": "3,200",
+                  "courses": "7",
+                  "experience": "6 Years",
+                  "bio": "Rohit is a professional video editor and filmmaker with experience in YouTube content, short films, and brand commercials. He teaches Premiere Pro, After Effects, and DaVinci Resolve.",
+                  "expertise": [
+                    "Premiere Pro",
+                    "After Effects",
+                    "DaVinci Resolve",
+                    "Motion Graphics"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/rohit-sharma"
+                },
+                {
+                  "id": "pooja-menon",
+                  "name": "Pooja Menon",
+                  "role": "Photography Teacher",
+                  "image": "/instructors/7.webp",
+                  "rating": 4.7,
+                  "reviews": "142",
+                  "students": "1,600",
+                  "courses": "3",
+                  "experience": "4 Years",
+                  "bio": "Pooja is a professional photographer and visual artist who has exhibited her work at national galleries. She teaches portrait, landscape, and product photography along with photo editing.",
+                  "expertise": [
+                    "Portrait Photography",
+                    "Lightroom",
+                    "Composition",
+                    "Product Photography"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-instagram",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/pooja-menon"
+                },
+                {
+                  "id": "nikhil-bansal",
+                  "name": "Nikhil Bansal",
+                  "role": "Stock Market Teacher",
+                  "image": "/instructors/8.webp",
+                  "rating": 4.9,
+                  "reviews": "361",
+                  "students": "4,400",
+                  "courses": "6",
+                  "experience": "10 Years",
+                  "bio": "Nikhil is a SEBI-registered investment analyst and stock market educator with a decade of trading experience. He teaches technical analysis, options trading, and portfolio management.",
+                  "expertise": [
+                    "Technical Analysis",
+                    "Options Trading",
+                    "Fundamental Analysis",
+                    "Portfolio Management"
+                  ],
+                  "socialLinks": [
+                    {
+                      "id": "sl-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-twitter",
+                      "icon": "FaTwitter",
+                      "url": "#"
+                    },
+                    {
+                      "id": "sl-youtube",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ],
+                  "url": "/instructors/nikhil-bansal"
                 }
               ]
             }
@@ -3521,6 +4335,19 @@
                   "isPopular": false
                 }
               ]
+            }
+          }
+        },
+        "ThankYouPage": {
+          "variants": {
+            "OnlineCourseThankYou1": {
+              "image": "/choose/thank_you.webp",
+              "title1": "Thank",
+              "title2": "You!",
+              "subtitle": "Your Enrollment Has Been Received",
+              "description": "Thank you for enrolling in our course. We have received your details and our team will get in touch with you shortly with further information regarding your course access, payment confirmation, and next steps.",
+              "buttonText": "Back to Home",
+              "buttonUrl": "/"
             }
           }
         }

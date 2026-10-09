@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   FaPlayCircle,
   FaArrowRight,
@@ -231,12 +232,12 @@ export const CourseDetailContent = ({ data }: { data?: any }) => {
               </div>
 
               {/* Buttons */}
-              <button className="w-full bg-[#0f62fe] text-white py-3.5 rounded-xl font-bold text-[15px] hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/25 mb-3 flex items-center justify-center gap-2">
-                Enroll Now <FaArrowRight className="text-[11px]" />
-              </button>
-              <button className="w-full bg-white border border-[#0f62fe] text-[#0f62fe] py-3.5 rounded-xl font-bold text-[15px] hover:bg-blue-50 transition-colors mb-8 flex items-center justify-center gap-2">
-                <FaHeadset className="text-[16px]" /> Contact Us <FaArrowRight className="text-[11px]" />
-              </button>
+              <Link href={data.enrollUrl || "/enroll"} className="w-full bg-[#0f62fe] text-white py-3.5 rounded-xl font-bold text-[15px] hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/25 mb-3 flex items-center justify-center gap-2">
+                {data.enrollText} <FaArrowRight className="text-[11px]" />
+              </Link>
+              <Link href={data.contactUrl || "/contact"} className="w-full bg-white border border-[#0f62fe] text-[#0f62fe] py-3.5 rounded-xl font-bold text-[15px] hover:bg-blue-50 transition-colors mb-8 flex items-center justify-center gap-2">
+                <FaHeadset className="text-[16px]" /> {data.contactText} <FaArrowRight className="text-[11px]" />
+              </Link>
 
               {/* Features List */}
               <div className="space-y-4 mb-8">

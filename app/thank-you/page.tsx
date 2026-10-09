@@ -2,13 +2,12 @@ import React from 'react';
 import { OnlineCourseTemplateData } from '@/types/templates.types';
 import rawData from '@/data/templates.json';
 import { Header } from '@/components/common/Header';
-import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { FaqPageSection } from '@/components/sections/FaqPageSection';
 import { Footer } from '@/components/common/Footer';
+import { ThankYouPageContent } from '@/components/sections/ThankYouPageContent';
 
 export const dynamic = 'force-dynamic';
 
-export default function FaqPage() {
+export default function ThankYouPage() {
   const templateData: OnlineCourseTemplateData = rawData;
   const sectionData = templateData?.categories?.OnlineCourse?.sections;
   const commonData = templateData?.common;
@@ -18,12 +17,8 @@ export default function FaqPage() {
   return (
     <main className="bg-white">
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
-
-      <Breadcrumb data={commonData.faqBreadcrumb} />
-
-      <div className="bg-[#fdfaf6]">
-        <FaqPageSection data={sectionData.Faq?.variants?.OnlineCourseFaq1} />
-      </div>
+      
+      <ThankYouPageContent data={sectionData.ThankYouPage?.variants?.OnlineCourseThankYou1} />
 
       <Footer data={commonData.Footer} />
     </main>

@@ -19,10 +19,7 @@ export default function ContactPage() {
     <main className="bg-white">
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
       
-      <Breadcrumb data={{
-        title: 'Contact Us',
-        paths: [{ label: 'Home', url: '/' }, { label: 'Contact Us' }]
-      }} />
+      <Breadcrumb data={commonData.contactBreadcrumb} />
       
       <ContactUsComponent data={sectionData.ContactUs?.variants?.OnlineCourseContactUs1} />
 

@@ -214,6 +214,17 @@ export interface FaqData {
   description: string;
   image: string;
   faqs: FaqItem[];
+  contactInfo?: {
+    phoneTitle: string;
+    phone: string;
+    emailTitle: string;
+    email: string;
+    hoursTitle: string;
+    hoursLine1: string;
+    hoursLine2: string;
+    buttonText: string;
+    buttonUrl: string;
+  };
 }
 
 export interface ContactUsData {
@@ -222,6 +233,9 @@ export interface ContactUsData {
   title2: string;
   description: string;
   contactInfo: {
+    title1?: string;
+    title2?: string;
+    description?: string;
     phoneTitle: string;
     phone: string;
     emailTitle: string;
@@ -233,7 +247,9 @@ export interface ContactUsData {
     hoursLine2: string;
   };
   form: {
-    title: string;
+    title1?: string;
+    title2?: string;
+    title?: string;
     description: string;
     buttonText: string;
     namePlaceholder?: string;
@@ -242,14 +258,17 @@ export interface ContactUsData {
     subjectPlaceholder?: string;
     messagePlaceholder?: string;
     servicesList?: string[];
+    privacyText?: string;
   };
   image?: string;
   mapUrl: string;
   infoBoxes?: {
+    id: string;
     icon: string;
     title: string;
-    desc1: string;
-    desc2: string;
+    desc1?: string;
+    desc2?: string;
+    description?: string;
   }[];
 }
 
@@ -413,6 +432,63 @@ export interface InstructorItem {
   name: string;
   role: string;
   image: string;
+  rating: number;
+  reviews: string;
+  students: string;
+  courses: string;
+  experience: string;
+  bio: string;
+  expertise: string[];
+  socialLinks: { id: string; icon: string; url: string }[];
+  url: string;
+}
+
+export interface InstructorPageData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  instructors: InstructorItem[];
+}
+
+
+
+export interface EnrollData {
+  leftSubtitle: string;
+  leftTitle1: string;
+  leftTitle2: string;
+  leftDescription: string;
+  image: string;
+  form: {
+    headerTitle1: string;
+    headerTitle2: string;
+    headerDescription: string;
+    buttonText: string;
+    nameLabel?: string;
+    emailLabel?: string;
+    phoneLabel?: string;
+    courseLabel?: string;
+    batchLabel?: string;
+    modeLabel?: string;
+    messageLabel?: string;
+    namePlaceholder?: string;
+    emailPlaceholder?: string;
+    phonePlaceholder?: string;
+    coursePlaceholder?: string;
+    batchPlaceholder?: string;
+    modePlaceholder?: string;
+    messagePlaceholder?: string;
+    coursesList?: string[];
+    batchesList?: string[];
+    modesList?: string[];
+    secureText?: string;
+  };
+  infoBoxes: {
+    id: string;
+    icon: string;
+    title: string;
+    description: string;
+  }[];
 }
 
 export interface CtaData {
@@ -465,14 +541,30 @@ export interface AchievementsData {
   counters: CounterItem[];
 }
 
+
+export interface ThankYouData {
+  image: string;
+  title1: string;
+  title2: string;
+  subtitle: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+}
+
 export interface OnlineCourseTemplateData {
   common: {
     aboutBreadcrumb?: any;
     coursesBreadcrumb?: any;
     pricingBreadcrumb?: any;
+    instructorsBreadcrumb?: any;
+    enrollBreadcrumb?: any;
+
+
     servicesBreadcrumb?: any;
     contactBreadcrumb?: any;
     enquiryBreadcrumb?: any;
+    faqBreadcrumb?: any;
     Footer?: FooterData;
   };
   categories: {
@@ -492,6 +584,10 @@ export interface OnlineCourseTemplateData {
         CoursePage?: { variants?: { OnlineCoursePage1?: CoursesData } };
         Process?: { variants?: { OnlineCourseProcess1?: ProcessData } };
         Instructors?: { variants?: { OnlineCourseInstructors1?: InstructorsData } };
+        InstructorsPage?: { variants?: { OnlineCourseInstructorsPage1?: InstructorPageData } };
+        EnrollPage?: { variants?: { OnlineCourseEnroll1?: EnrollData } };
+
+
         Testimonials?: { variants?: { OnlineCourseTestimonials1?: TestimonialsData } };
         Cta?: { variants?: { OnlineCourseCta1?: CtaData } };
         ServiceDetail?: { variants?: { [key: string]: ServiceDetailData } };
@@ -504,6 +600,7 @@ export interface OnlineCourseTemplateData {
         enquiry?: { variants?: { OnlineCourseEnquiry1?: EnquiryData } };
         ServicesGrid?: { variants?: { OnlineCourseServicesGrid1?: ServicesGridData } };
         Pricing?: { variants?: { OnlineCoursePricing1?: PricingData } };
+        ThankYouPage?: { variants?: { OnlineCourseThankYou1?: ThankYouData } };
       };
     };
   };
@@ -529,3 +626,4 @@ export interface PricingData {
   description: string;
   plans: PricingPlan[];
 }
+
