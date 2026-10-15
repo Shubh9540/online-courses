@@ -2941,7 +2941,7 @@
                   "icon": "FaCode",
                   "iconBg": "bg-blue-100",
                   "iconColor": "text-blue-500",
-                  "url": "/categories/web-development"
+                  "url": "/courses/web-development"
                 },
                 {
                   "id": "cat-2",
@@ -2950,7 +2950,7 @@
                   "icon": "FaChartLine",
                   "iconBg": "bg-pink-100",
                   "iconColor": "text-pink-500",
-                  "url": "/categories/digital-marketing"
+                  "url": "/courses/digital-marketing"
                 },
                 {
                   "id": "cat-3",
@@ -2959,7 +2959,7 @@
                   "icon": "FaPaintBrush",
                   "iconBg": "bg-emerald-100",
                   "iconColor": "text-emerald-500",
-                  "url": "/categories/graphic-design"
+                  "url": "/courses/graphic-design"
                 },
                 {
                   "id": "cat-4",
@@ -2968,7 +2968,7 @@
                   "icon": "FaDatabase",
                   "iconBg": "bg-purple-100",
                   "iconColor": "text-purple-500",
-                  "url": "/categories/data-science"
+                  "url": "/courses/data-science"
                 },
                 {
                   "id": "cat-5",
@@ -2977,7 +2977,7 @@
                   "icon": "FaRobot",
                   "iconBg": "bg-teal-100",
                   "iconColor": "text-teal-500",
-                  "url": "/categories/ai"
+                  "url": "/courses/ai"
                 },
                 {
                   "id": "cat-6",
@@ -2986,7 +2986,7 @@
                   "icon": "FaCog",
                   "iconBg": "bg-amber-100",
                   "iconColor": "text-amber-500",
-                  "url": "/categories/it-software"
+                  "url": "/courses/it-software"
                 },
                 {
                   "id": "cat-7",
@@ -2995,7 +2995,7 @@
                   "icon": "FaBriefcase",
                   "iconBg": "bg-blue-100",
                   "iconColor": "text-blue-500",
-                  "url": "/categories/business"
+                  "url": "/courses/business"
                 },
                 {
                   "id": "cat-8",
@@ -3004,7 +3004,7 @@
                   "icon": "FaCamera",
                   "iconBg": "bg-rose-100",
                   "iconColor": "text-rose-500",
-                  "url": "/categories/photography"
+                  "url": "/courses/photography"
                 },
                 {
                   "id": "cat-9",
@@ -3013,7 +3013,7 @@
                   "icon": "FaGraduationCap",
                   "iconBg": "bg-violet-100",
                   "iconColor": "text-violet-500",
-                  "url": "/categories/personal-development"
+                  "url": "/courses/personal-development"
                 },
                 {
                   "id": "cat-10",
@@ -3022,7 +3022,7 @@
                   "icon": "FaLanguage",
                   "iconBg": "bg-emerald-100",
                   "iconColor": "text-emerald-500",
-                  "url": "/categories/language"
+                  "url": "/courses/language"
                 }
               ]
             }
