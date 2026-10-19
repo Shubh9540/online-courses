@@ -14,6 +14,7 @@ export interface HeaderNavLink {
 export interface HeaderData {
   logo: string;
   logoAlt: string;
+  logoUrl: string;
   navLinks: { id: string; label: string; url: string; hasDropdown?: boolean }[];
   contactButton: { text: string; url: string };
 }
@@ -56,15 +57,11 @@ export interface AboutUsData {
   image1: string;
   image2?: string;
   features: string[];
-  contactPhone?: string;
-  contactText?: string;
   button: { text: string; url: string };
   stats?: {
     experience: string;
     experienceLabel: string;
     badgeText: string;
-    trustedTitle: string;
-    trustedDesc: string;
   };
 }
 
@@ -90,66 +87,6 @@ export interface WhatWeDoData {
   steps?: WhatWeDoItem[];
 }
 
-export interface ServiceDetailFeature {
-  id: string;
-  icon: string;
-  title: string;
-}
-
-export interface ServiceDetailProcessStep {
-  id: string;
-  number: string;
-  title: string;
-  description: string;
-}
-
-export interface ServiceDetailData {
-  id: string;
-  subtitle?: string;
-  title1: string;
-  title2: string;
-  description: string;
-  imageMain: string;
-  imageSmall1?: string;
-  imageSmall2?: string;
-  features: ServiceDetailFeature[];
-  overviewTitle?: string;
-  overviewText?: string[];
-  overviewImage?: string;
-  processTitle?: string;
-  processDescription?: string;
-  processSteps: ServiceDetailProcessStep[];
-  faqTitle?: string;
-  faqs?: { id: string; question: string; answer: string }[];
-  sidebar: {
-    quoteForm?: {
-      title: string;
-      description: string;
-      buttonText: string;
-      servicesList: string[];
-    };
-    servicesList: {
-      title: string;
-      services: { id: string; label: string; url: string }[];
-    };
-    contactCard?: {
-      title: string;
-      description: string;
-      phone: string;
-      email: string;
-      address: string;
-      buttonText: string;
-      bgImage: string;
-    };
-    whyChooseUsCard?: {
-      title: string;
-      description: string;
-      buttonText: string;
-      bgImage: string;
-    };
-  };
-}
-
 export interface TestimonialItem {
   id: string;
   name: string;
@@ -169,6 +106,8 @@ export interface TestimonialsData {
 
 export interface FooterData {
   logo: string;
+  homeUrl: string;
+  scrollTopLabel: string;
   bgImage?: string;
   col2Title: string;
   col3Title: string;
@@ -196,8 +135,48 @@ export interface FooterData {
     hours?: string;
     hoursDays?: string;
   };
-  instagram: string[];
   faqLinks?: { id: string; label: string; url: string }[];
+}
+
+export interface BreadcrumbPath {
+  id: string;
+  label: string;
+  url?: string;
+}
+
+export interface BreadcrumbData {
+  title: string;
+  paths: BreadcrumbPath[];
+  bgImage?: string;
+}
+
+export interface DynamicBreadcrumbData {
+  homeLabel: string;
+  homeUrl: string;
+  listingLabel: string;
+  listingUrl: string;
+  bgImage: string;
+}
+
+export interface NotFoundData {
+  code: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface GlobalUIData {
+  notFound: NotFoundData;
+  courseBreadcrumb: DynamicBreadcrumbData;
+  instructorBreadcrumb: DynamicBreadcrumbData;
+}
+
+export interface SiteMetadataData {
+  title: string;
+  description: string;
+  fontFamily: string;
+  icon: string;
 }
 
 
@@ -214,7 +193,7 @@ export interface FaqData {
   description: string;
   image: string;
   faqs: FaqItem[];
-  contactInfo?: {
+  contactInfo: {
     phoneTitle: string;
     phone: string;
     emailTitle: string;
@@ -258,18 +237,12 @@ export interface ContactUsData {
     subjectPlaceholder?: string;
     messagePlaceholder?: string;
     servicesList?: string[];
+    coursePlaceholder?: string;
     privacyText?: string;
   };
   image?: string;
   mapUrl: string;
-  infoBoxes?: {
-    id: string;
-    icon: string;
-    title: string;
-    desc1?: string;
-    desc2?: string;
-    description?: string;
-  }[];
+  mapTitle: string;
 }
 
 export interface EnquiryData {
@@ -278,6 +251,7 @@ export interface EnquiryData {
   title2: string;
   description: string;
   features: {
+    id: string;
     title: string;
     description: string;
   }[];
@@ -287,81 +261,13 @@ export interface EnquiryData {
     description: string;
     buttonText: string;
     servicesList: string[];
-  };
-}
-
-export interface ServicesGridItem {
-  id: string;
-  title: string;
-  image: string;
-  icon: string;
-  url: string;
-}
-
-export interface ServicesGridData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  description: string;
-  services: ServicesGridItem[];
-}
-
-export interface SponsorItem {
-  id: string;
-  image: string;
-  alt: string;
-  url?: string;
-}
-
-export interface SponsorsData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  sponsors: SponsorItem[];
-}
-
-export interface AboutPageFeature {
-  id: string;
-  icon: string;
-  title: string;
-}
-
-export interface AboutPageData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  description: string;
-  imageFront: string;
-  imageBack: string;
-  experienceText1: string;
-  experienceText2: string;
-  features: AboutPageFeature[];
-  buttonText: string;
-  buttonUrl: string;
-}
-
-export interface CustomServiceDetailData {
-  id: string;
-  subtitle: string;
-  title1: string;
-  title2: string;
-  mainDescription: string;
-  whatYouCanExpectTitle: string;
-  whatYouCanExpectDescription: string;
-  keyBenefitsTitle: string;
-  keyBenefits: string[];
-  whoCanBenefitTitle: string;
-  whoCanBenefitDescription: string;
-  buttonText: string;
-  buttonUrl: string;
-  sidebar: {
-    doctorImage: string;
-    doctorName: string;
-    doctorRole: string;
-    doctorDescription: string;
-    socialLinks: { id: string; icon: string; url: string }[];
-    quoteText: string;
-    quoteAuthor: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    servicePlaceholder: string;
+    datePlaceholder: string;
+    subjectPlaceholder: string;
+    messagePlaceholder: string;
   };
 }
 
@@ -399,15 +305,64 @@ export interface CourseItem {
   url: string;
 }
 
+export interface CourseDetailIconItem {
+  id: string;
+  icon: string;
+  text: string;
+  usesLessonCount?: boolean;
+}
+
+export interface CourseModuleItem {
+  id: string;
+  number: string;
+  title: string;
+  lessons: string;
+  time: string;
+}
+
+export interface CourseDetailUI {
+  introSuffix: string;
+  levelLabel: string;
+  learningLabel: string;
+  accessValue: string;
+  accessLabel: string;
+  overviewTitle1: string;
+  overviewTitle2: string;
+  overviewParagraphs: string[];
+  learnTitle1: string;
+  learnTitle2: string;
+  learningOutcomes: CourseDetailIconItem[];
+  curriculumTitle1: string;
+  curriculumTitle2: string;
+  modules: CourseModuleItem[];
+  lessonTitle: string;
+  lessonDuration: string;
+  requirementsTitle1: string;
+  requirementsTitle2: string;
+  requirements: string[];
+  discountText: string;
+  enrollText: string;
+  enrollUrl: string;
+  contactText: string;
+  contactUrl: string;
+  sidebarFeatures: CourseDetailIconItem[];
+  includesTitle: string;
+  includes: CourseDetailIconItem[];
+}
+
 export interface CoursesData {
   subtitle: string;
   title1: string;
   title2: string;
   description: string;
-  tabs: string[];
   courses: CourseItem[];
   viewAllUrl?: string;
+  viewAllText: string;
+  viewDetailsText: string;
+  detailUI?: CourseDetailUI;
 }
+
+export interface CoursePageData extends Omit<CoursesData, 'viewAllUrl' | 'viewAllText'> {}
 
 export interface ProcessItem {
   id: string;
@@ -416,6 +371,7 @@ export interface ProcessItem {
   description: string;
   icon: string;
   colorClass: string;
+  badgeClass: string;
   bgClass: string;
 }
 
@@ -432,15 +388,7 @@ export interface InstructorItem {
   name: string;
   role: string;
   image: string;
-  rating: number;
-  reviews: string;
-  students: string;
-  courses: string;
-  experience: string;
   bio: string;
-  expertise: string[];
-  socialLinks: { id: string; icon: string; url: string }[];
-  url: string;
 }
 
 export interface InstructorPageData {
@@ -482,6 +430,8 @@ export interface EnrollData {
     batchesList?: string[];
     modesList?: string[];
     secureText?: string;
+    processingText: string;
+    successText: string;
   };
   infoBoxes: {
     id: string;
@@ -506,6 +456,8 @@ export interface InstructorsData {
   description: string;
   viewMoreUrl: string;
   contactUrl: string;
+  viewMoreText: string;
+  contactText: string;
   instructors: InstructorItem[];
 }
 
@@ -554,25 +506,22 @@ export interface ThankYouData {
 
 export interface OnlineCourseTemplateData {
   common: {
-    aboutBreadcrumb?: any;
-    coursesBreadcrumb?: any;
-    pricingBreadcrumb?: any;
-    instructorsBreadcrumb?: any;
-    enrollBreadcrumb?: any;
-
-
-    servicesBreadcrumb?: any;
-    contactBreadcrumb?: any;
-    enquiryBreadcrumb?: any;
-    faqBreadcrumb?: any;
+    siteMetadata: SiteMetadataData;
+    aboutBreadcrumb?: BreadcrumbData;
+    coursesBreadcrumb?: BreadcrumbData;
+    pricingBreadcrumb?: BreadcrumbData;
+    instructorsBreadcrumb?: BreadcrumbData;
+    enrollBreadcrumb?: BreadcrumbData;
+    contactBreadcrumb?: BreadcrumbData;
+    enquiryBreadcrumb?: BreadcrumbData;
+    faqBreadcrumb?: BreadcrumbData;
     Footer?: FooterData;
+    globalUI: GlobalUIData;
   };
   categories: {
     OnlineCourse: {
-      templateComponents?: any;
+      templateComponents?: TemplateComponentsData;
       sections: {
-
-        AboutPage?: { variants?: { OnlineCourseAboutPage1?: AboutPageData } };
         Header?: { variants?: { OnlineCourseHeader1?: HeaderData } };
         Hero?: { variants?: { OnlineCourseHero1?: HeroData } };
         AboutUs?: { variants?: { OnlineCourseAboutUs1?: AboutUsData } };
@@ -581,7 +530,7 @@ export interface OnlineCourseTemplateData {
         Achievements?: { variants?: { OnlineCourseAchievements1?: AchievementsData } };
         Category?: { variants?: { OnlineCourseCategory1?: CategoryData } };
         Courses?: { variants?: { OnlineCourseCourses1?: CoursesData } };
-        CoursePage?: { variants?: { OnlineCoursePage1?: CoursesData } };
+        CoursePage?: { variants?: { OnlineCoursePage1?: CoursePageData } };
         Process?: { variants?: { OnlineCourseProcess1?: ProcessData } };
         Instructors?: { variants?: { OnlineCourseInstructors1?: InstructorsData } };
         InstructorsPage?: { variants?: { OnlineCourseInstructorsPage1?: InstructorPageData } };
@@ -590,15 +539,10 @@ export interface OnlineCourseTemplateData {
 
         Testimonials?: { variants?: { OnlineCourseTestimonials1?: TestimonialsData } };
         Cta?: { variants?: { OnlineCourseCta1?: CtaData } };
-        ServiceDetail?: { variants?: { [key: string]: ServiceDetailData } };
-        CustomServiceDetail?: { variants?: { [key: string]: CustomServiceDetailData } };
-        
         WhatWeDo?: { variants?: { OnlineCourseWhatWeDo1?: WhatWeDoData } };
         Faq?: { variants?: { OnlineCourseFaq1?: FaqData } };
-        Video?: { variants?: { OnlineCourseVideo1?: any } };
         ContactUs?: { variants?: { OnlineCourseContactUs1?: ContactUsData } };
         enquiry?: { variants?: { OnlineCourseEnquiry1?: EnquiryData } };
-        ServicesGrid?: { variants?: { OnlineCourseServicesGrid1?: ServicesGridData } };
         Pricing?: { variants?: { OnlineCoursePricing1?: PricingData } };
         ThankYouPage?: { variants?: { OnlineCourseThankYou1?: ThankYouData } };
       };
@@ -625,5 +569,17 @@ export interface PricingData {
   title2: string;
   description: string;
   plans: PricingPlan[];
+  popularText: string;
+}
+
+export interface TemplateComponentItem {
+  id: string;
+  key: string;
+  component: string;
+}
+
+export interface TemplateComponentsData {
+  shared: Record<string, string>;
+  pages: Record<string, { components: TemplateComponentItem[] }>;
 }
 

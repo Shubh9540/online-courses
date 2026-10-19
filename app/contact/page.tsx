@@ -16,7 +16,7 @@ export default function ContactPage() {
   if (!sectionData || !commonData) return null;
 
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--color-white)]">
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
       
       <Breadcrumb data={commonData.contactBreadcrumb} />

@@ -42,34 +42,34 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
     : [...data.testimonials, ...data.testimonials, ...data.testimonials, ...data.testimonials].slice(0, 9);
 
   return (
-    <section className="bg-[#f8fbff] py-20 lg:py-12 relative overflow-hidden">
+    <section className="bg-[var(--color-surface-blue)] py-20 lg:py-12 relative overflow-hidden">
 
       {/* Background Decor */}
       <div className="absolute top-10 right-10 opacity-30 pointer-events-none hidden lg:block">
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           {[0, 15, 30, 45, 60, 75].map((x) =>
             [0, 15, 30, 45, 60, 75].map((y) => (
-              <circle key={`${x}-${y}`} cx={x} cy={y} r="2" fill="#0f62fe" />
+              <circle key={`${x}-${y}`} cx={x} cy={y} r="2" fill="var(--color-brand)" />
             ))
           )}
         </svg>
       </div>
-      <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] rounded-full border-[60px] border-white opacity-50 pointer-events-none"></div>
+      <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] rounded-full border-[60px] border-[var(--color-white)] opacity-50 pointer-events-none"></div>
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative z-10">
 
         {/* Top Header */}
         <div className="flex flex-col items-center text-center mb-10">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-10 bg-blue-300" />
-            <h4 className="text-[#0f62fe] font-bold text-[13px] tracking-widest uppercase">
+            <div className="h-px w-10 bg-[var(--color-blue-300)]" />
+            <h4 className="text-[var(--color-brand)] font-bold text-[13px] tracking-widest uppercase">
               {data.subtitle}
             </h4>
-            <div className="h-px w-10 bg-blue-300" />
+            <div className="h-px w-10 bg-[var(--color-blue-300)]" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#051024] leading-tight">
-            {data.title1} <span className="text-[#0f62fe]">{data.title2}</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[var(--color-heading)] leading-tight">
+            {data.title1} <span className="text-[var(--color-brand)]">{data.title2}</span>
           </h2>
         </div>
 
@@ -83,13 +83,13 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
               >
                 <div
                   className={`transition-all duration-500 p-8 flex flex-col justify-between h-full ${index === selectedIndex
-                      ? 'bg-white rounded-[24px] shadow-[0_10px_40px_rgb(0,0,0,0.06)] scale-100 opacity-100'
+                      ? 'bg-[var(--color-white)] rounded-[24px] shadow-[0_10px_40px_var(--color-shadow-6)] scale-100 opacity-100'
                       : 'bg-transparent scale-95 opacity-60'
                     }`}
                 >
                   {/* Header: Avatar + Info */}
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="relative w-16 h-16 shrink-0 rounded-full overflow-hidden bg-slate-200 border-2 border-white shadow-sm">
+                    <div className="relative w-16 h-16 shrink-0 rounded-full overflow-hidden bg-[var(--color-slate-200)] border-2 border-[var(--color-white)] shadow-sm">
                       <Image
                         src={testi.avatar}
                         alt={testi.name}
@@ -98,22 +98,22 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
                       />
                     </div>
                     <div>
-                      <h4 className="font-extrabold text-[#051024] text-[18px]">
+                      <h4 className="font-extrabold text-[var(--color-heading)] text-[18px]">
                         {testi.name}
                       </h4>
-                      <p className="text-[#0f62fe] text-[13px] font-medium">
+                      <p className="text-[var(--color-brand)] text-[13px] font-medium">
                         {testi.location}
                       </p>
                     </div>
                   </div>
 
                   {/* Quote Text */}
-                  <p className="text-slate-500 text-[15px] leading-relaxed mb-6">
+                  <p className="text-[var(--color-slate-500)] text-[15px] leading-relaxed mb-6">
                     {testi.quote}
                   </p>
 
                   {/* Large Quote Icon */}
-                  <FaQuoteLeft className="text-[#0f62fe] text-5xl opacity-80" />
+                  <FaQuoteLeft className="text-[var(--color-brand)] text-5xl opacity-80" />
                 </div>
               </div>
             ))}
@@ -125,7 +125,7 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
           <button
             type="button"
             onClick={scrollPrev}
-            className="w-12 h-12 rounded-full border border-[#051024] text-[#051024] flex items-center justify-center hover:bg-[#051024] hover:text-white transition-colors cursor-pointer"
+            className="w-12 h-12 rounded-full border border-[var(--color-heading)] text-[var(--color-heading)] flex items-center justify-center hover:bg-[var(--color-brand)] hover:border-[var(--color-brand)] hover:text-[var(--color-white)] transition-colors cursor-pointer"
             aria-label="Previous testimonial"
           >
             <FaArrowLeft className="text-sm" />
@@ -133,7 +133,7 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
           <button
             type="button"
             onClick={scrollNext}
-            className="w-12 h-12 rounded-full bg-[#0f62fe] text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-md shadow-blue-500/20 cursor-pointer"
+            className="w-12 h-12 rounded-full border border-[var(--color-heading)] text-[var(--color-heading)] flex items-center justify-center hover:bg-[var(--color-brand)] hover:border-[var(--color-brand)] hover:text-[var(--color-white)] transition-colors cursor-pointer"
             aria-label="Next testimonial"
           >
             <FaArrowRight className="text-sm" />

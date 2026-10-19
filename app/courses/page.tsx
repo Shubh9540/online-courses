@@ -5,7 +5,6 @@ import rawData from '@/data/templates.json';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { CoursePageSection } from '@/components/sections/CoursePageSection';
-import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
@@ -24,8 +23,7 @@ export default function CoursesPage() {
       
       <CoursePageSection data={sectionData.CoursePage?.variants?.OnlineCoursePage1} />
       
-      <CtaSection data={sectionData.Cta?.variants?.OnlineCourseCta1} />
-      
+   
       <Footer data={commonData.Footer} />
     </main>
   );

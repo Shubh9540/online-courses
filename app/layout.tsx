@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import rawData from '@/data/templates.json';
+import { OnlineCourseTemplateData } from '@/types/templates.types';
 
+const templateData: OnlineCourseTemplateData = rawData;
+const siteMetadata = templateData.common.siteMetadata;
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -9,12 +13,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NextSkill - Online Course Platform",
-  description: "Explore top-quality online courses and boost your career with NextSkill.",
+  title: siteMetadata.title,
+  description: siteMetadata.description,
   icons: {
-    icon: '/main logo/logo.webp',
-    shortcut: '/main logo/logo.webp',
-    apple: '/main logo/logo.webp',
+    icon: siteMetadata.icon,
+    shortcut: siteMetadata.icon,
+    apple: siteMetadata.icon,
   },
 };
 

@@ -5,7 +5,6 @@ import rawData from '@/data/templates.json';
 import { Header } from '@/components/common/Header';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutUsSection } from '@/components/sections/AboutUsSection';
-import { CategorySection } from '@/components/sections/CategorySection';
 import { CoursesSection } from '@/components/sections/CoursesSection';
 import { ProcessSection } from '@/components/sections/ProcessSection';
 import { InstructorsSection } from '@/components/sections/InstructorsSection';
@@ -32,7 +31,6 @@ export default function Home() {
       <HeroSection data={sectionData.Hero?.variants?.OnlineCourseHero1} />
       <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.OnlineCourseWhatWeDo1} />
       <AboutUsSection data={sectionData.AboutUs?.variants?.OnlineCourseAboutUs1} />
-      <CategorySection data={sectionData.Category?.variants?.OnlineCourseCategory1} />
       <CoursesSection data={sectionData.Courses?.variants?.OnlineCourseCourses1} />
       <ProcessSection data={sectionData.Process?.variants?.OnlineCourseProcess1} />
       <InstructorsSection data={sectionData.Instructors?.variants?.OnlineCourseInstructors1} />

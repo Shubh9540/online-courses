@@ -17,13 +17,10 @@ export default function QuotePage() {
   if (!sectionData || !commonData) return null;
 
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--color-white)]">
 
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
-      <Breadcrumb data={{
-        title: 'Get a Quote',
-        paths: [{ label: 'Home', url: '/' }, { label: 'Get a Quote' }]
-      }} />
+      <Breadcrumb data={commonData.enquiryBreadcrumb} />
       
       {/* Enquiry Section */}
       <div className="pb-16">

@@ -16,12 +16,12 @@ export default function FaqPage() {
   if (!sectionData || !commonData) return null;
 
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--color-white)]">
       <Header data={sectionData.Header?.variants?.OnlineCourseHeader1} />
 
       <Breadcrumb data={commonData.faqBreadcrumb} />
 
-      <div className="bg-[#fdfaf6]">
+      <div className="bg-[var(--color-surface-warm)]">
         <FaqPageSection data={sectionData.Faq?.variants?.OnlineCourseFaq1} />
       </div>
 
